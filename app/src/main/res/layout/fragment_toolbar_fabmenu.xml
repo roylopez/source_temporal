@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/float_menu_compartir"
+        android:layout_width="@dimen/fab_size_normal"
+        android:layout_height="@dimen/fab_size_normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/android_darkgreen"
+        fab:menu_colorPressed="@color/android_green"
+        fab:menu_icon="@drawable/ic_share"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66aff198"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item_compartir_facebook"
+            android:layout_width="@dimen/fab_size_mini"
+            android:layout_height="@dimen/fab_size_mini"
+            android:src="@drawable/ic_facebook"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item_compartir_twitter"
+            android:layout_width="@dimen/fab_size_mini"
+            android:layout_height="@dimen/fab_size_mini"
+            android:src="@drawable/ic_twitter"
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

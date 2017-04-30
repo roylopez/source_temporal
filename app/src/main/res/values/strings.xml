@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">CVUQ</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="texto_inicio">Inicio</string>
+    <string name="texto_aceptar">Aceptar</string>
+    <string name="texto_buscar">Buscar</string>
+    <string name="texto_grupos">Grupos</string>
+    <string name="texto_investigadores">Investigadores</string>
+    <string name="texto_investigadores_underline"><u>Investigadores</u></string>
+    <string name="texto_actualizar">Actualizar</string>
+    <string name="texto_cambiar_idioma">Cambiar Idioma</string>
+
+    <string name="idioma_espaniol">Español</string>
+    <string name="idioma_ingles">Ingles</string>
+
+    <string name="texto_solicitudes_nuevas"></string>
+    <string name="texto_solicitudes_postergadas"></string>
+    <string name="texto_configurar_cuenta"></string>
+
+    <string name="texto_grupos_investigacion">Grupos de \n investigación</string>
+    <string name="texto_grupos_investigadores">Investigadores</string>
+    <string name="texto_nuevo_grupo">Nuevo Grupo</string>
+    <string name="texto_nuevo_grupo_investigacion">Nuevo grupo de \n investigación</string>
+    <string name="texto_nuevo_investigador">Nuevo investigador</string>
+
+    <string name="texto_lista_investigadores">Investigadores</string>
+
+    <string name="texto_siglas">Siglas</string>
+    <string name="texto_nombre">Nombre</string>
+    <string name="texto_apellido">Apellido</string>
+    <string name="texto_correo">Correo</string>
+    <string name="texto_nacionalidad"><u>Nacionalidad</u></string>
+    <string name="texto_lider_grupo"><u>Lider del grupo</u></string>
+    <string name="texto_lineas_investigacion"><u>Lineas de Investigación</u></string>
+    <string name="texto_genero">Genero</string>
+    <string name="texto_masculino">Masculino</string>
+    <string name="texto_femenino">Femenino</string>
+    <string name="texto_formacion_academica">Formacion académica</string>
+    <string name="texto_link_cvlac">Link CVLAC</string>
+    <string name="texto_guardar">Guardar</string>
+    <string name="texto_agregar_fotografia">Agregar fotografía</string>
+    <string name="texto_cambiar_fotografia">Cambiar fotografía</string>
+
+    <string name="texto_datos_personales">Datos Personales</string>
+    <string name="texto_informacion_adicional">Información Adicional</string>
+    <string name="texto_seleccionar_imagen">Selleciona la imagen</string>
+    <string name="texto_nombre_inv">Nombre:</string>
+    <string name="texto_genero_inv">Genero:</string>
+    <string name="texto_nacionalidad_inv">Nacionalidad:</string>
+    <string name="texto_categoria_inv">Categoria:</string>
+    <string name="texto_email_inv">Email:</string>
+
+    <string name="texto_titulo_lider">Lider investigador</string>
+    <string name="texto_titulo_integrantes">Integrantes</string>
+    <string name="texto_titulo_grupo">Grupo de Investigación</string>
+    <string name="texto_titulo_lineas">Lineas de investigación</string>
+
+    <string name="texto_titulo_1">Descripción</string>
+    <string name="texto_titulo_2">Líneas de investigación</string>
+    <string name="texto_titulo_3">Investigadores</string>
+    <string name="texto_titulo_principal">Detalle Grupo 1</string>
+    <string name="texto_titulo_lista_grupos">Grupos de investigación</string>
+    <string name="texto_titulo_lista_investigadores">Investigadores</string>
+    <string name="texto_titulo_search">Búsqueda</string>
+
+    <string name="texto_investigador_sin_grupo">Este investigador no pertenece a ningun grupo de investigación</string>
+    <string name="texto_investigador_sin_lineas">Este investigador no posee lineas de investigación</string>
+    <string name="texto_grupo_sin_lineas">Este grupo no posee lineas de investigación</string>
+    <string name="texto_grupo_sin_investigadores">Este grupo no posee investigadores</string>
+    <string name="texto_grupo_sin_lider">Este grupo no tiene lider</string>
+
+    <string-array name="nacionalidades">
+        <item>Colombia</item>
+        <item>Peru</item>
+        <item>Brasil</item>
+        <item>Argentina</item>
+        <item>Ecuador</item>
+        <item>Uruguay</item>
+        <item>Chile</item>
+        <item>Mexico</item>
+        <item>Costa Rica</item>
+        <item>España</item>
+        <item>Francia</item>
+        <item>Alemania</item>
+        <item>Canada</item>
+        <item>Holanda</item>
+        <item>Estados Unidos</item>
+        <item>Inglaterra</item>
+        <item>Italia</item>
+    </string-array>
+
+    <string-array name="categorias_investigador">
+        <item>Junior</item>
+        <item>Senior</item>
+        <item>Asociado</item>
+    </string-array>
+
+    <string-array name="categorias_grupo">
+        <item>A1</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+    <string-array name="lineas_investigacion">
+        <item>Redes</item>
+        <item>Bases de datos</item>
+        <item>HCI</item>
+        <item>Ingenieria de Software</item>
+        <item>Arquitectura de Hardware</item>
+        <item>Gestion del Conocimiento</item>
+        <item>Direccion de TI</item>
+        <item>Seguridad Informatica</item>
+        <item>Mineria de Datos</item>
+        <item>Infraestructura</item>
+        <item>Computación en la nube</item>
+        <item>Otra linea 1</item>
+        <item>Otra linea 2</item>
+        <item>Otra linea 3</item>
+        <item>Otra linea 4</item>
+        <item>Otra linea 5</item>
+        <item>Otra linea 6</item>
+        <item>Otra linea 7</item>
+        <item>Otra linea 8</item>
+        <item>Otra linea 9</item>
+        <item>Otra linea 10</item>
+        <item>Otra linea 11</item>
+    </string-array>
+
+    <string name="tag_fragment_addgroup">AddGroup</string>
+    <string name="tag_fragment_addinvestigator">AddInvestigator</string>
+    <string name="tag_fragment_investigator">Investigator</string>
+    <string name="tag_fragment_home">Home</string>
+    <string name="tag_fragment_listainvestigadores">ListaInvestigadores</string>
+    <string name="tag_fragment_detalleinvestigador">DetalleInvestigador</string>
+    <string name="tag_fragment_listagrupos">ListaGrupos</string>
+    <string name="tag_fragment_detallegrupo">DetalleGrupo</string>
+    <string name="tag_fragment_search">Búsqueda</string>
+
+    <string name="grupo_search">Grupo</string>
+    <string name="investigador_search">Investigador</string>
+    <string name="lineas_search">Linea de Investigación</string>
+    <string name="titulo_search_dialog">Terminos de búsqueda</string>
+    <string name="button_search">Buscar</string>
+
+    <string name="texto_nombre_detGrupo">Nombre:</string>
+    <string name="texto_sigla_detGrupo">Sigla:</string>
+    <string name="texto_email_detGrupo">Email:</string>
+    <string name="texto_categoria_detGrupo">Categoria:</string>
+    <string name="texto_link_detGrupo">Link CVLAC</string>
+
+    <string name="texto_aviso_conexion">La aplicación no cuenta con acceso a internet, por favor verifique su conexión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

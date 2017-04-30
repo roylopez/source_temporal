@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    tools:context="roy.cvuq.uniquindio.edu.co.cvuqv1.fragment.busqueda.SearchDialogFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkGreen"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/titulo_search_dialog"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSize_txtE" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/grupo_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/grupo_search"
+            android:inputType="text"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@android:color/black"
+            android:textSize="@dimen/textSize_txtE" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/investigador_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/investigador_search"
+            android:inputType="text"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@android:color/black"
+            android:textSize="@dimen/textSize_txtE" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/lineas_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lineas_search"
+            android:inputType="text"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@android:color/black"
+            android:textSize="@dimen/textSize_txtE" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorDarkGreen"
+        android:padding="15dp"
+        android:text="@string/button_search"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSize_txtE" />
+
+</LinearLayout>

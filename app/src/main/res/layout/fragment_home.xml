@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="roy.cvuq.uniquindio.edu.co.cvuqv1.fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/logo_app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/border_logo_app"
+            android:src="@drawable/logo_app_completo" />
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:columnCount="2"
+            app:rowCount="2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="1"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/option_groups"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/image_group" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="@string/texto_grupos_investigacion"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textSize_home"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="1"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/option_investigators"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/image_investigator" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="@string/texto_investigadores"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textSize_home"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="1"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/option_add_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/image_add_group" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="@string/texto_nuevo_grupo_investigacion"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textSize_home"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="1"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/option_add_investigator"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/image_add_investigator" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="@string/texto_nuevo_investigador"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textSize_home"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

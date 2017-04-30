@@ -1,0 +1,41 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NavigationDrawerText">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/colorDarkGreen</item>
+        <item name="colorControlHighlight">@color/colorGreen</item>
+    </style>
+
+    <style name="DialogStyle" parent="android:Theme.Holo.Dialog">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:windowMinWidthMajor">92%</item>
+        <item name="android:windowMinWidthMinor">92%</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorDarkGreen</item>
+    </style>
+
+    <style name="DialogoTitulo" parent="android:Theme.Holo.Dialog"/>
+
+    <style name="CardView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/android_green</item>
+    </style>
+
+</resources>

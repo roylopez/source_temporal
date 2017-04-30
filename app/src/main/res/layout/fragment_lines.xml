@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="roy.cvuq.uniquindio.edu.co.cvuqv1.fragment.registro_investigador.LineFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lista_lineas_investigacion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="22pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_set_lines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_aceptar"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/PrimaryButton" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="roy.cvuq.uniquindio.edu.co.cvuqv1.fragment.registro_gupo.SelectInvestigatorsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lista_investigadores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/marginRecycler" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_set_investigators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_aceptar"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/PrimaryButton" />
+
+    </LinearLayout>
+
+</FrameLayout>

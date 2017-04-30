@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/resumen_lider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/nombre_investigador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:text="@string/texto_investigadores"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize_txtE" />
+
+        <CheckBox
+            android:id="@+id/check_lider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nombre_investigador"
+            android:layout_alignBottom="@+id/nombre_investigador"
+            android:layout_alignParentEnd="true"
+            android:scaleX="1.4"
+            android:scaleY="1.4"
+            android:theme="@style/MyCheckBox" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

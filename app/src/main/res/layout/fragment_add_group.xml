@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="roy.cvuq.uniquindio.edu.co.cvuqv1.fragment.registro_gupo.AddGroupFragment">
+
+    <ScrollView
+        android:id="@+id/scroll_view_add_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/agregar_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/add_img_marginLR"
+                android:layout_marginRight="@dimen/add_img_marginLR"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border_black"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <ImageView
+                    android:id="@+id/image_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add_group" />
+
+                <TextView
+                    android:id="@+id/texto_fotografia_add_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/texto_agregar_fotografia"
+                    android:textSize="@dimen/textSize_add"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/texto_nombre"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/apellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/texto_siglas"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/texto_correo"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/lider_grupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/texto_lider_grupo"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSize_add"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/link_cvlac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/texto_link_cvlac"
+                    android:inputType="textUri" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/lineas_investigacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/texto_lineas_investigacion"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSize_add"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height_add"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/investigadores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/texto_investigadores_underline"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSize_add"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/guardar_grupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/buttonMargin_add"
+                android:layout_marginTop="@dimen/buttonMargin_add"
+                android:backgroundTint="@color/colorDarkGreen"
+                android:elevation="1dp"
+                android:text="@string/texto_guardar"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/PrimaryButton" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

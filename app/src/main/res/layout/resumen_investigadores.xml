@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/resumen_investigadores"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:padding="8dp"
+    card_view:cardBackgroundColor="#FFFFFF"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="false"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="@dimen/width_img_inv_det"
+            android:layout_height="@dimen/heigth_img_inv_det"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/gray"
+            android:padding="1dp"
+            android:src="@drawable/image_investigator_fondoblanco" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imagen"
+            android:animateLayoutChanges="false"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/nombre_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_str_nom_inv_det"
+                android:textSize="@dimen/textSize_card" />
+
+            <TextView
+                android:id="@+id/apellido_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nombre_res"
+                android:layout_below="@id/nombre_res"
+                android:textSize="@dimen/textSize_card" />
+
+            <TextView
+                android:id="@+id/linea_inv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/apellido_res"
+                android:layout_below="@+id/apellido_res"
+                android:textSize="@dimen/textSize_card" />
+
+            <TextView
+                android:id="@+id/linea_inv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/linea_inv1"
+                android:layout_below="@+id/linea_inv1"
+                android:textSize="@dimen/textSize_card" />
+
+            <TextView
+                android:id="@+id/linea_inv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/linea_inv2"
+                android:layout_below="@+id/linea_inv2"
+                android:textSize="@dimen/textSize_card" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="roy.cvuq.uniquindio.edu.co.cvuqv1.fragment.registro_investigador.AddInvestigatorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingEnd="65dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="65dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/agregar_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/add_img_marginLR"
+            android:layout_marginRight="@dimen/add_img_marginLR"
+            android:layout_marginTop="45dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/border_black"
+            android:orientation="vertical"
+            android:padding="1dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/image_investigator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:src="@drawable/image_investigator" />
+
+            <TextView
+                android:id="@+id/texto_fotografia_add_investigator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.2"
+                android:gravity="center_horizontal"
+                android:text="@string/texto_agregar_fotografia"
+                android:textSize="@dimen/textSize_add"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.1">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/texto_nombre"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.1">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/texto_apellido"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.1">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/texto_correo"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingEnd="65dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="65dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/nacionalidad_investigador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_nacionalidad"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize_add"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_grupo_investigacion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_height_add"
+            android:layout_weight="0.12" />
+
+        <TextView
+            android:id="@+id/lineas_investigacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:text="@string/texto_lineas_investigacion"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize_add"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:background="@drawable/border_black"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0.5"
+                android:text="@string/texto_genero"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSize_add"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/masculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:buttonTint="@color/colorDarkGreen"
+                    android:text="@string/texto_masculino"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/femenino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/radioButton_marginLeft_add"
+                    android:layout_weight="0.5"
+                    android:buttonTint="@color/colorDarkGreen"
+                    android:checked="true"
+                    android:text="@string/texto_femenino"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_height_add"
+            android:layout_weight="0.12" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/formacion_academica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/texto_formacion_academica"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/link_cvlac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/texto_link_cvlac"
+                android:inputType="textUri" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/guardar_investigador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/buttonMargin_add"
+            android:layout_marginTop="@dimen/buttonMargin_add"
+            android:backgroundTint="@color/colorDarkGreen"
+            android:elevation="1dp"
+            android:text="@string/texto_guardar"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/PrimaryButton" />
+
+    </LinearLayout>
+
+</LinearLayout>
